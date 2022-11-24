@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "ec0ae389-0b0d-4194-a72c-ad4a0a8540d2",
+		"name": "mocroservices-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15164194"
+	},
+	"item": [
+		{
+			"name": "departments",
+			"item": [
+				{
+					"name": "Create Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"departmentName\":\"IT\",\n    \"departmentDescription\":\"Information technology (IT) is a broad professional category covering functions including building communications networks, safeguarding data and information, and troubleshooting computer problems.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employees",
+			"item": [
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Muhammad\",\n    \"lastName\":\"Ali\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/department/1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"department",
+								"1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
